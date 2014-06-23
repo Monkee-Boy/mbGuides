@@ -23,6 +23,6 @@ These guides are maintained by the Monkee-Boy Dev Team and primarily for interna
 ##### MBoy Dev Team
 
 * James Fleeting, [@fleeting](https://github.com/fleeting)
-* Pete Gautier
 * Sarah Higley, [@smhigley](https://github.com/smhigley)
-* Craig Kahle, [@ckahle33](https://github.com/ckahle33)
+* John Hoover, [@defvayne23](https://github.com/defvayne23)
+* Pete Gautier

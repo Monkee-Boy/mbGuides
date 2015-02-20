@@ -1,6 +1,6 @@
 # Git Standards
 
-<a href="https://github.com/Monkee-Boy/mbGuides/blob/master/resources/git.md" title="Git Resources">./resources/git.md</a>
+> **Fleeting Tip**: Check out [github.com/fleeting/dotfiles](https://github.com/jamesfleeting/dotfiles) for some awesome git .files including a great default .gitconfig and .gitignore.
 
 ## Commit Often
 The most important thing to remember when working on a project is to commit often. Don't spend hours or even days coding and then make a commit. This makes it much harder to look back over commits, revert if needed and diff commits are basically useless.

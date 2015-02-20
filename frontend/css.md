@@ -1,4 +1,4 @@
-# CSS
+# CSS ![Current Status](https://img.shields.io/badge/status-DRAFT-green.svg)
 
 > All code in any code-base should look like a single person typed it, no matter how many people contributed.
 
@@ -7,6 +7,8 @@
 * Keep code transparent, sane, and readable at all times.
 * Think scalable and modular. Don't get overly specific.
 * **This is the agreed upon style and it should be strictly enforced.**
+
+---
 
 ## File organization
 
@@ -25,6 +27,7 @@ All CSS and SASS files live together. On a typical project inside of `./css` wil
 
 Break out all SASS into import files for ease of use. Your main `./styles.scss` should mostly hold imports. Put an effort into grouping rulesets and use common sense.
 
+---
 
 ## Formatting
 
@@ -33,6 +36,7 @@ Break out all SASS into import files for ease of use. Your main `./styles.scss` 
 * Never mix tabs and spaces.
 * An .editorconfig should always be used to maintain these conventions.
 
+---
 
 ## Comments
 
@@ -63,6 +67,7 @@ Well documented code can save the day. As with every language, this holds true f
 }
 ```
 
+---
 
 ## Rulesets
 
@@ -111,6 +116,7 @@ Well documented code can save the day. As with every language, this holds true f
 .selector-1, .selector-2 { display: block; width: 250px; }
 ```
 
+---
 
 ## Selectors
 * Use lowercase and hyphens to separate words when naming selectors. Do not use camelCase or underscores.
@@ -134,6 +140,7 @@ Well documented code can save the day. As with every language, this holds true f
 }
 ```
 
+---
 
 ## Declaration Order
 
@@ -168,6 +175,7 @@ Declarations should be ordered where structurally important properties (position
 }
 ```
 
+---
 
 ## Preprocessors
 
@@ -204,6 +212,7 @@ At Monkee-Boy we use SASS as our preprocessor.
 }
 ```
 
+---
 
 ### Font Use & Abuse
 Before embedding a web font it is important to check the license and how it will affect performance. Only embed the weights you need and avoid using more than two web fonts.
@@ -229,6 +238,7 @@ Before embedding a web font it is important to check the license and how it will
 
 If you are looking for a custom font to embed then check out <a href="http://www.fontsquirrel.com/">http://www.fontsquirrel.com/</a> and <a href="http://www.google.com/webfonts">http://www.google.com/webfonts</a>.
 
+---
 
 #### Thanks
 * [necolas/idiomatic-css](https://github.com/necolas/idiomatic-css)

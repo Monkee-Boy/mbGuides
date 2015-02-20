@@ -82,11 +82,11 @@ Well documented code can save the day. As with every language, this holds true f
 * Include a single space after the colon of a declaration.
 * Use lowercase and shorthand hex values, e.g., `#aaa`.
 * Always use double quotes, e.g., `content: ""`.
-* Quote attribute values in selectors, e.g., `input[type="checkbox"]`.
+* Don't quote attribute values in selectors, e.g., `input[type=checkbox]`.
 * Where allowed, avoid specifying units for zero-values, e.g., `margin: 0;`.
 * Include a space after each comma in comma-separated property or function values.
 * Include a semi-colon at the end of the last declaration in a declaration block.
-* Place the closing brace of a ruleset in the same column as the first character of the ruleset.
+* The closing brace of a ruleset in the same column as the first character of the selector.
 * Separate each ruleset by a blank line.
 * All properties and values should be lowercase, except font names.
 

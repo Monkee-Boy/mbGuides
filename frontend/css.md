@@ -62,6 +62,10 @@ Well documented code can save the day. As with every language, this holds true f
   property: value;
 }
 
+.selector {
+  property: value; // Comment while in SASS on a single property.
+}
+
 .selector { /* Do not do this. */
   property: value;
 }
@@ -162,9 +166,9 @@ Declarations should be ordered where structurally important properties (position
   box-sizing: border-box;
   width: 100px;
   height: 100px;
+  margin: 10px;
   padding: 10px;
   border: 10px solid #333;
-  margin: 10px;
 
   /* Other */
   background: #000;

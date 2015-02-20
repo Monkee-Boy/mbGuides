@@ -240,7 +240,7 @@ If you are looking for a custom font to embed then check out <a href="http://www
 
 ---
 
-#### Thanks
+## Thanks
 * [necolas/idiomatic-css](https://github.com/necolas/idiomatic-css)
 * [CSS Guidelines](http://cssguidelin.es/)
 * [github.com/styleguide/css](https://github.com/styleguide/css)

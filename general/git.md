@@ -13,13 +13,13 @@ A good rule of thumb is commit after you do anything. If you update jQuery in th
 
 Always remember to attach a commit message to every single commit and be as descriptive as possible in what was done in that commit. This helps a lot with diff, reverting, and overall code reviews.
 
-The first message should always be short and to the point.
+The first message should always be short and to the point. Think of this as a summary of your commit.
 
 ```
 git commit -a -m "Updated jQuery to v2.0."
 ```
 
-When you need to elaborate on your commit you can attach a second message to be more descriptive and go into as much detail as you need.
+When you need to elaborate on your summary you can attach a second message to be an extended description and can go into as much detail as you need.
 
 ```
 git commit -a -m "Refactoring calendar plugin." -m "Removed duplicated functions in controller, added more descriptive comments, fixed SQL query on edit, and added caching."
@@ -62,3 +62,10 @@ You will be using tags on every project.
 When using mBoy Deployments this is handled for you automatically. See **General - Deployments** for more details.
 
 For details on creating, pushing, or checking out tags checkout the [git docs](http://git-scm.com/book/en/v2/Git-Basics-Tagging).
+
+---
+
+## Thanks
+
+* [Tim Pope on proper commit messages](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
+* [GitHub on great commit messages](https://github.com/blog/926-shiny-new-commit-styles)

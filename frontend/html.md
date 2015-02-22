@@ -129,3 +129,7 @@ Table headers should always be presented using `<th>` elements. Column headings 
 ```
 
 ---
+
+## Thanks
+
+* [github.com/styleguide/templates](https://github.com/styleguide/templates)

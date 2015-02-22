@@ -9,9 +9,9 @@ The coding standards should be followed for all projects. The only exception wou
 
 ### Tasks
 
-* [ ] Split out each topic to their own file with a TOC for front end and back end.
+* [x] Split out each topic to their own file with a TOC for front end and back end.
 * [ ] Expand JavaScript section using AirBnB's guide.
-* [ ] Expand upon using SASS.
+* [x] Expand upon using SASS.
 * [ ] Add more detailed accessibility section.
 * [ ] Add SEO Guide (this will extend on the typical title/alt tags and include more meta and schema.org info).
 * [ ] Add guide for mbCMS including plugin/file structure, naming convention of plugins and urls, and standards used in it.

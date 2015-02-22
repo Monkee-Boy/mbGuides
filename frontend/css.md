@@ -219,6 +219,24 @@ At Monkee-Boy we use SASS as our preprocessor.
 
 ---
 
+## Feature Sniff
+
+Always include Modernizr and make use of it to properly detect features instead of browsers. Avoid targeting a specific browser in your CSS or JavaScript. Modernizr provides great classes on the HTML element to use in your CSS to target features.
+
+```
+.logo {
+  background: url(/images/logo.svg);
+}
+
+.no-svg .logo {
+  background: url(/images/logo.png);
+}
+```
+
+Reference the [Modernizr Docs](http://modernizr.com/docs/) for more.
+
+---
+
 ## Font Use & Abuse
 Before embedding a web font it is important to check the license and how it will affect performance. Only embed the weights you need and avoid using more than two web fonts.
 

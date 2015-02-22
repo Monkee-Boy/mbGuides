@@ -1,4 +1,4 @@
-# CSS ![Current Status](https://img.shields.io/badge/status-DRAFT-green.svg)
+# HTML ![Current Status](https://img.shields.io/badge/status-DRAFT-green.svg)
 
 > All code in any code-base should look like a single person typed it, no matter how many people contributed.
 

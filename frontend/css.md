@@ -186,6 +186,7 @@ Declarations should be ordered where structurally important properties (position
 At Monkee-Boy we use SASS as our preprocessor.
 
 * Limit nesting to 2 levels deep. Reassess any nesting more than 3 levels deep. If you cannot help it, step back and rethink your overall strategy (either the specificity needed, or the layout of the nesting). This prevents overly-specific CSS selectors.
+  * Remember that pseudo-classes and pseudo-elements don't count as a nesting level; e.g. `&:hover` and `&:before` are not a new level.
 * Avoid large numbers of nested rules. Break them up when readability starts to be affected. Avoid nesting that spreads over more than 20 lines.
 * Always place `@extend` statements on the first lines of a declaration block.
 * Where possible, group `@include` statements at the top of a declaration block, after any `@extend` statements.
@@ -221,7 +222,7 @@ At Monkee-Boy we use SASS as our preprocessor.
 ## Font Use & Abuse
 Before embedding a web font it is important to check the license and how it will affect performance. Only embed the weights you need and avoid using more than two web fonts.
 
-[Monkee-Boy/_mixins.scss](https://github.com/Monkee-Boy/_mixins.scss/blob/master/_mixins.scss#L248) contains a great @font-face mixin to use when embedding fonts.
+> **Fleeting Tip**: [Monkee-Boy/_mixins.scss](https://github.com/Monkee-Boy/_mixins.scss/blob/master/_mixins.scss#L248) contains a great @font-face mixin to use when embedding fonts.
 
 ```
 @include font-face(icomoon, /fonts/icomoon);

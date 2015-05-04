@@ -189,7 +189,7 @@ At Monkee-Boy we use SASS as our preprocessor.
   * Remember that pseudo-classes and pseudo-elements don't count as a nesting level; e.g. `&:hover` and `&:before` are not a new level.
 * Avoid large numbers of nested rules. Break them up when readability starts to be affected. Avoid nesting that spreads over more than 20 lines.
 * Always place `@extend` statements on the first lines of a declaration block.
-* Where possible, group `@include` statements at the top of a declaration block, after any `@extend` statements.
+* All `@include` statements should follow the declaration order set out above to determine where they should be placed. If an include is setting multiple properties, use your best judgement on what the main purpose of the include is to determine where to place it.
 * Prefix all custom functions with `mb-`. This helps to avoid any potential to confuse your function with a native CSS function, or to clash with functions from libraries.
 * Always make use of [Monkee-Boy/_mixins.scss](https://github.com/Monkee-Boy/_mixins.scss).
 

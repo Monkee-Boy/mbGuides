@@ -1,4 +1,4 @@
-# Git ![Current Status](https://img.shields.io/badge/status-Pending Approval-green.svg)
+# Git ![Current Status](https://img.shields.io/badge/status-Approved-green.svg)
 
 * Remember that you are never the only developer on a project. You might be coding solo to start with but at any point another developer could jump in.
 * **This is the agreed upon style and it should be strictly enforced.**

@@ -1,4 +1,4 @@
-# Deployments ![Current Status](https://img.shields.io/badge/status-Pending Approval-green.svg)
+# Deployments ![Current Status](https://img.shields.io/badge/status-Approved-green.svg)
 
 Monkee-Boy has tried to streamline our deployment process as much as possible. There are still things we can improve and will over time. We use Capistrano to manage our deployments between environments.
 

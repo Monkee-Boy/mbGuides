@@ -17,7 +17,7 @@ There are a few things you will need to get setup before you can start deploymen
 * `gem install hipchat`
 * `gem install capistrano-gitslave`
 * `gem install mboy-deploy --source PRIVATESOURCE`
-  * See [private repo](https://monkeeboy.beanstalkapp.com/mboy-deploy-gem/browse/git/README.md) for details.
+  * See [private repo](https://bitbucket.org/monkeeboy/mboy-deploy-gem) for details.
 
 ## The Deployment
 

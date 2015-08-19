@@ -195,7 +195,7 @@ Table headers should always be presented using `<th>` elements. Column headings 
 
 ## Comments
 
-HTML comments should be added on a case-by-case basis. They are primarily used to let the developer know where a certain block of code ends. Comments are not necessary on more-explicit tags, such as '<header>' or '<nav>', but are useful when dealing with <div> tags with different class or id attributes.
+HTML comments should be added on a case-by-case basis. They are primarily used to let the developer know where a certain block of code ends. Comments are not necessary on more-explicit tags, such as `<header>` or `<nav>`, but are useful when dealing with <div> tags with different class or id attributes.
 
 ```
 <!-- Correct -->

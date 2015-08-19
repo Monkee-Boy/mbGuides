@@ -130,6 +130,50 @@ Table headers should always be presented using `<th>` elements. Column headings 
 
 ---
 
+---
+
+## Comments
+
+HTML comments should be added on a case-by-case basis. They are primarily used to let the developer know where a certain block of code ends. Comments are not necessary on more-explicit tags, such as <header> or <nav>, but are useful when dealing with <div> tags with different class or id attributes.
+
+```
+<!-- Correct -->
+<header>
+  <div class="content-pane">
+    <div class="row">
+      <div class="column">
+        <p>Sample text</p>
+        
+      </div>
+
+      <div class="column">
+        <p>Sample text</p>
+
+      </div>
+    </div> <!-- /.row -->
+  </div> <!-- /.content-pane -->
+</header>
+
+<!-- Incorrect -->
+<header>
+  <div class="content-pane">
+    <div class="row">
+      <div class="column">
+        <p>Sample text</p>
+
+      </div>
+
+      <div class="column">
+        <p>Sample text</p>
+
+      </div>
+    </div> <!-- /.row -->
+  </div> <!-- /.content-pane -->
+</header>
+```
+
+---
+
 ## Thanks
 
 * [github.com/styleguide/templates](https://github.com/styleguide/templates)

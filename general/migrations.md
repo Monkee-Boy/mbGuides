@@ -23,7 +23,7 @@ If a Bitbucket repository is present, but the files are outdated, perform the fo
 
 ## Setting Up the Deployment Environment
 
-SSH
+**SSH**
 * Open your Terminal application and SSH into deploy@habitat.monkee-boy.com.
 * Change into the /var/www directory
 * Check the existing production site and see if it redirects to www. when submitted. If so, enter the following ([siteURL] should be replaced with the actual site URL):
@@ -32,7 +32,7 @@ SSH
 ```
 * Omit the trailing `www` if the site does not redirect.
 
-SFTP
+**SFTP**
 * SFTP into habitat.monkee-boy.com
 * Enter into the directory for the site you're migrating and create a `dev` folder in same level as the `www` folder.
 * Create a `shared` folder within both the `www` and `dev` directories.

@@ -54,7 +54,7 @@ If a Bitbucket repository is present, but the files are outdated, perform the fo
 
 ## Deploying the Site
 
-* Add the Capistrano generator to the site.
+* Add the Capistrano generator to the site by following the [Monkee-Boy deployment process](general/deployments.md).
   * Set the site's domain to the current site's domain.
 * Deploy the site.
 * Edit your hostfile to make sure that the dev site shows up on your machine.

@@ -25,7 +25,7 @@ If a Bitbucket repository is present, but the files are outdated, perform the fo
 
 **SSH**
 * Open your Terminal application and SSH into deploy@habitat.monkee-boy.com.
-* Change into the /var/www directory
+* Change into the /var/www directory.
 * Check the existing production site and see if it redirects to `www` when submitted. If so, enter the following ([siteURL] should be replaced with the actual site URL):
 ```
 ~/bin/domaininit [siteURL] www
@@ -33,7 +33,7 @@ If a Bitbucket repository is present, but the files are outdated, perform the fo
 * Omit the trailing `www` if the site does not redirect.
 
 **SFTP**
-* SFTP into habitat.monkee-boy.com
+* SFTP into habitat.monkee-boy.com.
 * Enter into the directory for the site you're migrating and create a `dev` folder in same level as the `www` folder.
 * Create a `shared` folder within both the `www` and `dev` directories.
 * Add the live site's .htaccess file, wp-config.php file, and wp-content/uploads folder to both `shared` directories.
@@ -57,9 +57,9 @@ If a Bitbucket repository is present, but the files are outdated, perform the fo
 * Add the Capistrano generator to the site.
   * Set the site's domain to the current site's domain.
 * Deploy the site.
-* Edit your hostfile to make sure that the dev site shows up on your machine
+* Edit your hostfile to make sure that the dev site shows up on your machine.
   * 198.58.101.143 dev.[siteURL]
 * SSH into deploy@habitat.monkee-boy.com.
 * CD into the project directory.
-* CD into `dev/public.html`.
+* Run `cd dev/public.html`
 * Run `wp search-replace ‘[produrl]’ ‘[devurl]' --all-tables`

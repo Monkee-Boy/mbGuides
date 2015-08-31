@@ -4,7 +4,7 @@
 
 ## Preparing the Repository
 
-All site files need to be stored in a Bitbucket repository.
+**All site files need to be stored in a Bitbucket repository.**
 
 If a Bitbucket repository isn't present at the time of the migration, perform the following steps:
 
@@ -26,7 +26,7 @@ If a Bitbucket repository is present, but the files are outdated, perform the fo
 **SSH**
 * Open your Terminal application and SSH into deploy@habitat.monkee-boy.com.
 * Change into the /var/www directory
-* Check the existing production site and see if it redirects to www. when submitted. If so, enter the following ([siteURL] should be replaced with the actual site URL):
+* Check the existing production site and see if it redirects to `www` when submitted. If so, enter the following ([siteURL] should be replaced with the actual site URL):
 ```
 ~/bin/domaininit [siteURL] www
 ```

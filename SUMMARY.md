@@ -12,3 +12,4 @@
 * [General](general/readme.md)
     * [git](general/git.md)
     * [Deployments](general/deployments.md)
+    * [Migrations](general/migrations.md)

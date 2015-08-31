@@ -39,7 +39,7 @@ If a Bitbucket repository is present, but the files are outdated, perform the fo
 * Add the live site's .htaccess file, wp-config.php file, and wp-content/uploads folder to both `shared` directories.
   * See the Databases section for how to configure the wp-config.php file before adding it to the `shared` directory.
 
-## Databases
+## Setting Up the Database
 
 * Go to habitat.monkee-boy.com/phpmyadmin.
 * Click on the Databases tab and create two new databases for the development and production sites.
@@ -52,7 +52,7 @@ If a Bitbucket repository is present, but the files are outdated, perform the fo
 * Log into the live site's FTP and export the database as a compressed gzip file.
 * Import the compressed gzip file into both the development and production databases in the Habitat.
 
-## Deploying
+## Deploying the Site
 
 * Add the Capistrano generator to the site.
   * Set the site's domain to the current site's domain.

@@ -30,6 +30,67 @@ One doctype to rule them all. A proper doctype helps you avoid quirks mode by tr
 * Don't set tabindex manually, rely on the browser to set the order.
 * All JavaScript should load after content and styles.
 * Do NOT minify your HTML.
+* Line breaks should be inserted after closing tags to increase readability and help with grouping.
+* Line breaks are not needed for multiple list items or when then next tag is another closing tag.
+
+```
+<!-- Correct -->
+<div class="full">
+  <div class="header-logo">
+    <a href="#"><img src="images/logo.png" alt="Logo"></a>
+  </div>
+
+  <div class="contact">
+    <p> 1-800-123-4567</p>
+
+    <a href="#" class="btn" title="Contact Us">Contact Us</a>
+  </div>
+</div>
+
+<!-- Correct -->
+<nav>
+  <a href="#" id="menuBtn" class="icon-menu"></a>
+
+  <ul>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#infographic">Infographic</a></li>
+    <li><a href="#webinar">Upcoming Webinar</a></li>
+    <li><a href="#whitepaper">Whitepaper</a></li>
+    <li><a href="#success">Success Stories</a></li>
+    <li><a href="tel:+1-800-123-4567">Contact Us</a></li>
+  </ul>
+</nav>
+
+<!-- Incorrect -->
+<div class="full">
+  <div class="header-logo">
+    <a href="#"><img src="images/logo.png" alt="Logo"></a>
+
+  </div>
+
+  <div class="contact">
+    <p> 1-800-123-4567</p>
+
+    <a href="#" class="btn" title="Contact Us">Contact Us</a>
+
+  </div>
+
+</div>
+
+<!-- Extremely Incorrect -->
+<div class="full">
+  <div class="header-logo">
+    <a href="#"><img src="images/logo.png" alt="Logo"></a>
+  </div>
+  <div class="contact">
+    <p>1-800-123-4567</p>
+    <a href="#" class="btn" title="Contact Us">Contact Us</a>
+  </div>
+</div>
+```
+
+---
 
 ---
 
@@ -126,6 +187,50 @@ Table headers should always be presented using `<th>` elements. Column headings 
     <td>Cell Item</td>
   </tr>
 </table>
+```
+
+---
+
+---
+
+## Comments
+
+HTML comments should be added on a case-by-case basis. They are primarily used to let the developer know where a certain block of code ends. Comments are not necessary on more-explicit tags, such as `<header>` or `<nav>`, but are useful when dealing with `<div>` tags with different class or id attributes.
+
+```
+<!-- Correct -->
+<header>
+  <div class="content-pane">
+    <div class="row">
+      <div class="column">
+        <p>Sample text</p>
+
+      </div>
+
+      <div class="column">
+        <p>Sample text</p>
+
+      </div>
+    </div> <!-- /.row -->
+  </div> <!-- /.content-pane -->
+</header>
+
+<!-- Incorrect -->
+<header>
+  <div class="content-pane">
+    <div class="row">
+      <div class="column">
+        <p>Sample text</p>
+
+      </div>
+
+      <div class="column">
+        <p>Sample text</p>
+
+      </div>
+    </div>
+  </div>
+</header>
 ```
 
 ---

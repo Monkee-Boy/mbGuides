@@ -56,12 +56,30 @@ You will be using tags on every project.
 * Every time a branch is deployed to an environment it should be tagged with a datetime stamp.
   * When `master` is deployed to production it would be tagged as `master-201502201109`.
   * When `dev`  is deployed to development it would be tagged as `dev-201502201109`.
-* When a new version of a site is launching you should tag `master` before merging in the new version with an end of life tag - `EOL-20150220`.
-  * This allows us to checkout this tag if we ever need the old site for any reason.
 
 When using mBoy Deployments this is handled for you automatically. See **General - Deployments** for more details.
 
 For details on creating, pushing, or checking out tags checkout the [git docs](http://git-scm.com/book/en/v2/Git-Basics-Tagging).
+
+---
+
+## End of Life
+
+When a project is being redesigned or moving away from Monkee-Boy, we should mark the last active state of the code as `End of Life`. This is primarily helpful during a redesign as a way to archive the old site when taking the new site live. This allows us to checkout old versions at any time.
+
+**Removing a project from Monkee-Boy**
+* Create a new branch from `master` with the name `EOL-YYYYMMDD` (EOL-20150220). Push this new branch to the remote.
+* Open the repo on BitBucket and under settings change the main branch to the new EOL branch you pushed above.
+* Delete any branches that were part of the old site; `master`, `staging`, `dev`, etc. These should be removed from your local and from the remote.
+
+**Project Redesign**
+* Create a new branch from `master` with the name `EOL-YYYYMMDD` (`EOL-20150220`). Push this new branch to the remote.
+* Open the repo on BitBucket and under settings change the main branch to the new EOL branch you pushed above.
+* Delete any branches that were part of the old site; `master`, `staging`, `dev`, etc. These should be removed from your local and from the remote.
+* From your `redesign` branch, create a new branch for `dev`. Push and deploy.
+* From `dev`, create a new branch for `staging`. Push and deploy. *(optional, only if a staging environment is needed)*
+* From `staging` (or `dev` if there is no `staging`), create a new branch for `master`. Push and deploy.
+* Open the repo on BitBucket and under settings change the main branch back to `master`.
 
 ---
 

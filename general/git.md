@@ -67,8 +67,8 @@ For details on creating, pushing, or checking out tags checkout the [git docs](h
 
 When a project is being redesigned or moving away from Monkee-Boy, we should mark the last active state of the code as `End of Life`. This is primarily helpful during a redesign as a way to archive the old site when taking the new site live. This allows us to checkout old versions at any time.
 
-**Removing a project from Monkee-Boy**
-* Create a new branch from `master` with the name `EOL-YYYYMMDD` (EOL-20150220). Push this new branch to the remote.
+**Removing Project**
+* Create a new branch from `master` with the name `EOL-YYYYMMDD` (`EOL-20150220`). Push this new branch to the remote.
 * Open the repo on BitBucket and under settings change the main branch to the new EOL branch you pushed above.
 * Delete any branches that were part of the old site; `master`, `staging`, `dev`, etc. These should be removed from your local and from the remote.
 

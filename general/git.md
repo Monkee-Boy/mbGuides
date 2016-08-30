@@ -3,7 +3,7 @@
 * Remember that you are never the only developer on a project. You might be coding solo to start with but at any point another developer could jump in.
 * **This is the agreed upon style and it should be strictly enforced.**
 
-> **Fleeting Tip**: Check out [fleeting/dotfiles](https://github.com/jamesfleeting/dotfiles) for some awesome git .files including a great default .gitconfig and .gitignore. /selfpromotion
+> **Monkee Tip**: Check out [fleeting/dotfiles](https://github.com/jamesfleeting/dotfiles) for some awesome git .files including a great default .gitconfig and .gitignore. /selfpromotion
 
 ## Commits
 

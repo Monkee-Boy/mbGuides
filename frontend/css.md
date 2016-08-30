@@ -240,7 +240,7 @@ Reference the [Modernizr Docs](http://modernizr.com/docs/) for more.
 ## Font Use & Abuse
 Before embedding a web font it is important to check the license and how it will affect performance. Only embed the weights you need and avoid using more than two web fonts.
 
-> **Fleeting Tip**: [Monkee-Boy/_mixins.scss](https://github.com/Monkee-Boy/_mixins.scss/blob/master/_mixins.scss#L248) contains a great @font-face mixin to use when embedding fonts.
+> **Monkee Tip**: [Monkee-Boy/_mixins.scss](https://github.com/Monkee-Boy/_mixins.scss/blob/master/_mixins.scss#L248) contains a great @font-face mixin to use when embedding fonts.
 
 ```
 @include font-face(icomoon, /fonts/icomoon);

@@ -2,7 +2,7 @@
 
 Monkee-Boy has tried to streamline our deployment process as much as possible. There are still things we can improve and will over time. We use Capistrano to manage our deployments between environments.
 
-> **Fleeting Tip**: If interested in an overview of what went into creating our deployment process checkout the blog post [How Monkee-Boy Does Deployments](http://iwasasuperhero.com/2015/04/how-monkee-boy-does-deployments/).
+> **Monkee Tip**: If interested in an overview of what went into creating our deployment process checkout the blog post [How Monkee-Boy Does Deployments](http://iwasasuperhero.com/2015/04/how-monkee-boy-does-deployments/).
 
 ## The Setup
 

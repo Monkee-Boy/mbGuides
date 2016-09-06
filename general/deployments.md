@@ -4,6 +4,17 @@ Monkee-Boy has tried to streamline our deployment process as much as possible. T
 
 > **Monkee Tip**: If interested in an overview of what went into creating our deployment process checkout the blog post [How Monkee-Boy Does Deployments](http://iwasasuperhero.com/2015/04/how-monkee-boy-does-deployments/).
 
+## The Process
+
+* Write code. QA code. Push code to remote.
+* Run `cap dev deploy`. QA dev site.
+* Checkout `staging` and merge `dev`. QA code. Push code to remote. (staging is optional)
+* Run `cap staging deploy`. QA staging site. (staging is optional)
+* Checkout `master` and merge `staging` or `dev`. QA code. Push code to remote.
+* Run `cap production deploy`. QA live site.
+
+---
+
 ## The Setup
 
 There are a few things you will need to get setup before you can start deployments.
@@ -21,10 +32,10 @@ There are a few things you will need to get setup before you can start deploymen
 
 ## The Deployment
 
-You have Capistrano and the required gems installed so you should be ready to deploy. If you are working on a new project then continue below for details on setting up the config files. If you are working on an existing project that already handles deployments, then deploying is really simple. Remember that deployments use the git repo so be sure to commit and push anything you need deployed.
+You have Capistrano and the required gems installed so you should be ready to deploy. If you are working on a new project then continue below for details on setting up the config files. If you are working on an existing project that already handles deployments, then deploying is simple. Remember that deployments use the git repo so be sure to commit and push before deploying.
 
 * `cap production deploy`
-  * This will deploy the `master` branch to the production environment (the live site). Do not ever deploy to production without first deploying to dev and doing a QA.
+  * This will deploy the `master` branch to the production environment (the live site). Do not ever deploy to production without first deploying to `dev` and doing a QA.
 * `cap dev deploy`
   * This will deploy the `dev` branch to the development environment. You should always deploy here before production. This is where you will QA your work.
 * `cap foo deploy`
@@ -32,7 +43,7 @@ You have Capistrano and the required gems installed so you should be ready to de
 * `cap production build:bower`
   * You can setup custom Capistrano tasks to run with every deployment but you can also choose to only run tasks manually. It could be database migrations or maybe to sync a database between dev and production.
 * `cap production deploy:rollback`
-  * So, you deployed to production after doing a proper QA on dev but a bug showed up right after deploying to production. You can do a rollback which will rollback the site to the previous version just before you deployed.
+  * So, you deployed to production after doing a proper QA on dev but a bug showed up right after deploying. You can do a rollback which will rollback the site to the previous version just before you deployed.
 
 ## The Configuration
 
@@ -40,7 +51,7 @@ If working on a new project or one that hasn't been setup with our deployment pr
 
 ### The Generator
 
-You will need to have npm and yeoman. Full details for setting up the generator can be found at [generator-mboy-deploy](https://www.npmjs.com/package/generator-mboy-deploy). After everything is installed you simply `cd` into the project root and run `yo mboy-deploy`. Some general basic questions will be project name, git url, and path on The Habitat. Depending on your project it will ask several more questions so you end up with a config that just works.
+You will need to have `npm` and `yeoman` first. Full details for setting up the generator can be found at [generator-mboy-deploy](https://www.npmjs.com/package/generator-mboy-deploy). After everything is installed you simply `cd` into the project root and run `yo mboy-deploy`. Some basic questions will be project name, git url, and path on Habitat. Depending on your project it will ask several more questions so you end up with a config that works for you.
 
 ### The Manual Way
 
@@ -52,7 +63,7 @@ This file doesn't need any customizations in typical use. It requires the gems n
 
 `./config/deploy.rb`
 
-This is where it all happens. You will notice that the file makes heavy use of the mBoy gem to load in defaults and customize the deployment messages. You can overwrite any of the defaults set in the gem as needed.
+This is where it all happens. You can overwrite any of the defaults set in the gem as needed.
 
 There are a few variables you are required to set before deploying.
 
@@ -76,7 +87,7 @@ There are only a few things that should be tweaked in these environment files.
 * **:deploy_env** is the name of that environment. Typically will be production, dev, staging, etc.
 * **:branch** is the name of the branch that should be deployed. Default is `master` so this only needs to be set in other environments besides production; see `./config/deploy/dev.rb` for example.
 
-## The Process
+## What Happens
 
 So, what exactly happens when you run `cap production deploy`? First lets take a look at the directory structure on the server that deployments use.
 

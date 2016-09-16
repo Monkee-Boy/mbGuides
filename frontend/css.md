@@ -12,11 +12,11 @@
 
 ## File organization
 
-All CSS and SASS files live together. On a typical project inside of `./css` will be your compiled and minified CSS files along with a SASS directory. The `./css/sass` directory should contain your primary .scss file along with any imports. If the project has a large number of SASS files then group together; for example `./css/sass/components/` which might house `_accordions.scss`, `_slider`, and `_callouts`.
+All CSS and SASS files live together. On a typical project, directly inside of `./css` will be your compiled and minified CSS files along with a `src` directory. The `./css/src` directory should contain your primary .scss file along with any imports. If the project has a large number of SASS files then group together; for example `./css/src/components/` which might house `_accordions.scss`, `_slider`, and `_callouts`.
 
 ```
 ./css
-├── ./sass
+├── ./src
 │   ├── styles.scss
 │   ├── _grid.scss
 │   ├── _typography.scss
@@ -25,7 +25,7 @@ All CSS and SASS files live together. On a typical project inside of `./css` wil
 └── app.min.css
 ```
 
-Break out all SASS into import files for ease of use. Your main `./styles.scss` should mostly hold imports. Put an effort into grouping rulesets and use common sense.
+Break out all SASS into import files for ease of use. Your main `./styles.scss` should only hold imports. Put an effort into grouping rulesets and use common sense.
 
 ---
 
@@ -185,7 +185,7 @@ Declarations should be ordered where structurally important properties (position
 
 At Monkee-Boy we use SASS as our preprocessor.
 
-* Limit nesting to 2 levels deep. Reassess any nesting more than 3 levels deep. If you cannot help it, step back and rethink your overall strategy (either the specificity needed, or the layout of the nesting). This prevents overly-specific CSS selectors.
+* Limit nesting to 2 levels deep. Reassess any nesting more than 3 levels deep. If you cannot help it, step back and rethink your overall strategy (either the specificity needed or the layout of the nesting). This prevents overly-specific CSS selectors.
   * Remember that pseudo-classes and pseudo-elements don't count as a nesting level; e.g. `&:hover` and `&:before` are not a new level.
 * Avoid large numbers of nested rules. Break them up when readability starts to be affected. Avoid nesting that spreads over more than 20 lines.
 * Always place `@extend` statements on the first lines of a declaration block.
@@ -259,7 +259,7 @@ Before embedding a web font it is important to check the license and how it will
 }
 ```
 
-If you are looking for a custom font to embed then check out <a href="http://www.fontsquirrel.com/">http://www.fontsquirrel.com/</a> and <a href="http://www.google.com/webfonts">http://www.google.com/webfonts</a>.
+If you are looking for a custom font to embed then check out [fontsquirrel.com/](http://www.fontsquirrel.com/) and [google.com/webfonts](http://www.google.com/webfonts).
 
 ---
 
